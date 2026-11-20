@@ -1,0 +1,397 @@
+{
+  "system": "lorenz",
+  "latent_dimension": 12,
+  "n_observations": 3,
+  "train_end": 700,
+  "n_test": 300,
+  "seeds": [
+    42,
+    7,
+    21
+  ],
+  "n_initializations_per_seed": 3,
+  "n_longrun_evaluation_samples": 2400,
+  "n_burn_in_steps": 400,
+  "reference_vs_reference": {
+    "js_width_0.5": 0.09527828694175991,
+    "kl_raw_width_0.5": 0.47697403688749196,
+    "js_width_1.0": 0.06536903718931841,
+    "kl_raw_width_1.0": 0.24609210207050766,
+    "js_width_1.5": 0.04497620433032706,
+    "kl_raw_width_1.5": 0.16332901810822992,
+    "std_ratio_by_dimension": [
+      1.0210610844075916,
+      0.998913384128865,
+      0.9415161547668678
+    ],
+    "mean_std_ratio": 0.9871635411011082,
+    "near_fixed_point": false,
+    "finite_trajectory": true
+  },
+  "reference_finite_time_lyapunov": 1.2290364882014315,
+  "plrnn": {
+    "runs": [
+      {
+        "status": "ok",
+        "init_index_train": 699,
+        "scores": {
+          "js_width_0.5": 0.5540363928118185,
+          "kl_raw_width_0.5": 8.612527153176538,
+          "js_width_1.0": 0.458201281336222,
+          "kl_raw_width_1.0": 8.815254642689922,
+          "js_width_1.5": 0.4338214152602464,
+          "kl_raw_width_1.5": 7.3862086072481015,
+          "std_ratio_by_dimension": [
+            0.4597553483079547,
+            0.5540265540655392,
+            0.6915977353123502
+          ],
+          "mean_std_ratio": 0.5684598792286147,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -0.009569750128504197,
+        "model": "plrnn",
+        "seed": 42,
+        "source": "phase3_saved_checkpoint",
+        "forecast_mse_h5": 0.2647586836948726
+      },
+      {
+        "status": "ok",
+        "init_index_train": 466,
+        "scores": {
+          "js_width_0.5": 0.554254023631785,
+          "kl_raw_width_0.5": 8.613290042300628,
+          "js_width_1.0": 0.45833740431877346,
+          "kl_raw_width_1.0": 8.815567157050523,
+          "js_width_1.5": 0.43396040026586313,
+          "kl_raw_width_1.5": 7.38653767629832,
+          "std_ratio_by_dimension": [
+            0.45939493122853875,
+            0.5553275793389458,
+            0.6900218234016664
+          ],
+          "mean_std_ratio": 0.5682481113230503,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -0.027144365355906655,
+        "model": "plrnn",
+        "seed": 42,
+        "source": "phase3_saved_checkpoint",
+        "forecast_mse_h5": 0.2647586836948726
+      },
+      {
+        "status": "ok",
+        "init_index_train": 233,
+        "scores": {
+          "js_width_0.5": 0.5541137491055836,
+          "kl_raw_width_0.5": 8.612911590081284,
+          "js_width_1.0": 0.4584591586326425,
+          "kl_raw_width_1.0": 8.815874449427417,
+          "js_width_1.5": 0.433127930690432,
+          "kl_raw_width_1.5": 7.377792121301992,
+          "std_ratio_by_dimension": [
+            0.4587963406023489,
+            0.5547910152116167,
+            0.6901952946095393
+          ],
+          "mean_std_ratio": 0.5679275501411684,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": 0.016028450572117214,
+        "model": "plrnn",
+        "seed": 42,
+        "source": "phase3_saved_checkpoint",
+        "forecast_mse_h5": 0.2647586836948726
+      },
+      {
+        "status": "ok",
+        "init_index_train": 699,
+        "scores": {
+          "js_width_0.5": 0.5168303115483341,
+          "kl_raw_width_0.5": 8.202444803276178,
+          "js_width_1.0": 0.419735697744717,
+          "kl_raw_width_1.0": 8.009562836877183,
+          "js_width_1.5": 0.27709049215190257,
+          "kl_raw_width_1.5": 5.992388388028061,
+          "std_ratio_by_dimension": [
+            0.4935620680865212,
+            0.5810171817217803,
+            0.7237415314770738
+          ],
+          "mean_std_ratio": 0.5994402604284584,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": 0.027797045015961877,
+        "model": "plrnn",
+        "seed": 7,
+        "source": "trained_in_phase4",
+        "forecast_mse_h5": 0.2477959318012736
+      },
+      {
+        "status": "ok",
+        "init_index_train": 466,
+        "scores": {
+          "js_width_0.5": 0.5167455314181967,
+          "kl_raw_width_0.5": 8.202225586142163,
+          "js_width_1.0": 0.419717283633674,
+          "kl_raw_width_1.0": 8.009523110637753,
+          "js_width_1.5": 0.27674366161590824,
+          "kl_raw_width_1.5": 5.991263481945271,
+          "std_ratio_by_dimension": [
+            0.49395684504605214,
+            0.5808139167269812,
+            0.7231249915506542
+          ],
+          "mean_std_ratio": 0.5992985844412292,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": 0.0016942108468191146,
+        "model": "plrnn",
+        "seed": 7,
+        "source": "trained_in_phase4",
+        "forecast_mse_h5": 0.2477959318012736
+      },
+      {
+        "status": "ok",
+        "init_index_train": 233,
+        "scores": {
+          "js_width_0.5": 0.5168085480238329,
+          "kl_raw_width_0.5": 8.202388685226563,
+          "js_width_1.0": 0.4197330169514857,
+          "kl_raw_width_1.0": 8.009434248736808,
+          "js_width_1.5": 0.27708393192077785,
+          "kl_raw_width_1.5": 5.992317820896613,
+          "std_ratio_by_dimension": [
+            0.4935797924862748,
+            0.5810261713895584,
+            0.7234410059011479
+          ],
+          "mean_std_ratio": 0.5993489899256604,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": 0.006230835116368318,
+        "model": "plrnn",
+        "seed": 7,
+        "source": "trained_in_phase4",
+        "forecast_mse_h5": 0.2477959318012736
+      },
+      {
+        "status": "ok",
+        "init_index_train": 699,
+        "scores": {
+          "js_width_0.5": 0.5221410413026116,
+          "kl_raw_width_0.5": 8.201517138369875,
+          "js_width_1.0": 0.4216254525938809,
+          "kl_raw_width_1.0": 7.976987393974322,
+          "js_width_1.5": 0.2874406820146295,
+          "kl_raw_width_1.5": 5.892577403073694,
+          "std_ratio_by_dimension": [
+            0.5113136971280534,
+            0.6060053545048142,
+            0.7322130965955999
+          ],
+          "mean_std_ratio": 0.6165107160761557,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -0.03220323158658046,
+        "model": "plrnn",
+        "seed": 21,
+        "source": "trained_in_phase4",
+        "forecast_mse_h5": 0.24647440767437048
+      },
+      {
+        "status": "ok",
+        "init_index_train": 466,
+        "scores": {
+          "js_width_0.5": 0.5225215654621841,
+          "kl_raw_width_0.5": 8.202688896943426,
+          "js_width_1.0": 0.42185129660910803,
+          "kl_raw_width_1.0": 7.977755406435623,
+          "js_width_1.5": 0.28774156981783255,
+          "kl_raw_width_1.5": 5.893677999025849,
+          "std_ratio_by_dimension": [
+            0.5112998477785178,
+            0.606013599528384,
+            0.7321761545150643
+          ],
+          "mean_std_ratio": 0.6164965339406554,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -0.060160724259360615,
+        "model": "plrnn",
+        "seed": 21,
+        "source": "trained_in_phase4",
+        "forecast_mse_h5": 0.24647440767437048
+      },
+      {
+        "status": "ok",
+        "init_index_train": 233,
+        "scores": {
+          "js_width_0.5": 0.5225611185024372,
+          "kl_raw_width_0.5": 8.203933431400602,
+          "js_width_1.0": 0.4217880455147849,
+          "kl_raw_width_1.0": 7.97748078252499,
+          "js_width_1.5": 0.2873794554897942,
+          "kl_raw_width_1.5": 5.891653390915631,
+          "std_ratio_by_dimension": [
+            0.5113268169573996,
+            0.6060001402212806,
+            0.7322077519716527
+          ],
+          "mean_std_ratio": 0.6165115697167777,
+          "near_fixed_point": false,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -0.030316680967813966,
+        "model": "plrnn",
+        "seed": 21,
+        "source": "trained_in_phase4",
+        "forecast_mse_h5": 0.24647440767437048
+      }
+    ],
+    "summary": {
+      "n_attempts": 9,
+      "n_stable": 9,
+      "stable_fraction": 1.0,
+      "histogram_js_width_1.0": {
+        "n": 9,
+        "median": 0.4217880455147849,
+        "min": 0.419717283633674,
+        "max": 0.4584591586326425
+      },
+      "histogram_kl_raw_width_1.0": {
+        "n": 9,
+        "median": 8.009523110637753,
+        "min": 7.976987393974322,
+        "max": 8.815874449427417
+      },
+      "mean_std_ratio": {
+        "n": 9,
+        "median": 0.5993489899256604,
+        "min": 0.5679275501411684,
+        "max": 0.6165115697167777
+      },
+      "near_fixed_point_count": 0,
+      "finite_time_lyapunov": {
+        "n": 9,
+        "median": -0.009569750128504197,
+        "min": -0.060160724259360615,
+        "max": 0.027797045015961877
+      }
+    }
+  },
+  "lds_matched": {
+    "runs": [
+      {
+        "status": "ok",
+        "init_index_train": 699,
+        "scores": {
+          "js_width_0.5": 0.6764275138109097,
+          "kl_raw_width_0.5": 9.54956930265725,
+          "js_width_1.0": 0.589092357848573,
+          "kl_raw_width_1.0": 10.190171053845889,
+          "js_width_1.5": 0.6373257310103788,
+          "kl_raw_width_1.5": 11.392122515324154,
+          "std_ratio_by_dimension": [
+            1.747525073630134e-07,
+            1.3468566838336333e-07,
+            9.548121392189058e-08
+          ],
+          "mean_std_ratio": 1.3497312988942244e-07,
+          "near_fixed_point": true,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -1.6286905856491454,
+        "model": "lds_matched",
+        "seed": 42
+      },
+      {
+        "status": "ok",
+        "init_index_train": 466,
+        "scores": {
+          "js_width_0.5": 0.6764275138109097,
+          "kl_raw_width_0.5": 9.54956930265725,
+          "js_width_1.0": 0.589092357848573,
+          "kl_raw_width_1.0": 10.190171053845889,
+          "js_width_1.5": 0.6373257310103788,
+          "kl_raw_width_1.5": 11.392122515324154,
+          "std_ratio_by_dimension": [
+            5.526177112457616e-08,
+            4.9836703965873396e-08,
+            3.79435101269977e-08
+          ],
+          "mean_std_ratio": 4.7680661739149084e-08,
+          "near_fixed_point": true,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -1.6286905856491454,
+        "model": "lds_matched",
+        "seed": 42
+      },
+      {
+        "status": "ok",
+        "init_index_train": 233,
+        "scores": {
+          "js_width_0.5": 0.6764275138109097,
+          "kl_raw_width_0.5": 9.54956930265725,
+          "js_width_1.0": 0.589092357848573,
+          "kl_raw_width_1.0": 10.190171053845889,
+          "js_width_1.5": 0.6373257310103788,
+          "kl_raw_width_1.5": 11.392122515324154,
+          "std_ratio_by_dimension": [
+            1.4215732275292618e-07,
+            1.1548275316139325e-07,
+            6.726115864613097e-08
+          ],
+          "mean_std_ratio": 1.0830041152015013e-07,
+          "near_fixed_point": true,
+          "finite_trajectory": true
+        },
+        "finite_time_lyapunov": -1.6286905856491454,
+        "model": "lds_matched",
+        "seed": 42
+      }
+    ],
+    "summary": {
+      "n_attempts": 3,
+      "n_stable": 3,
+      "stable_fraction": 1.0,
+      "histogram_js_width_1.0": {
+        "n": 3,
+        "median": 0.589092357848573,
+        "min": 0.589092357848573,
+        "max": 0.589092357848573
+      },
+      "histogram_kl_raw_width_1.0": {
+        "n": 3,
+        "median": 10.190171053845889,
+        "min": 10.190171053845889,
+        "max": 10.190171053845889
+      },
+      "mean_std_ratio": {
+        "n": 3,
+        "median": 1.0830041152015013e-07,
+        "min": 4.7680661739149084e-08,
+        "max": 1.3497312988942244e-07
+      },
+      "near_fixed_point_count": 3,
+      "finite_time_lyapunov": {
+        "n": 3,
+        "median": -1.6286905856491454,
+        "min": -1.6286905856491454,
+        "max": -1.6286905856491454
+      }
+    },
+    "forecast_mse_h5": 0.7133015904899831,
+    "spectral_radius": 0.9679510010729881
+  },
+  "interpretation_notes": "Stable here means finite and bounded, NOT correct attractor. PLRNN/linear models have equal latent M, NOT identical parameter count or inference. Raw histogram KL and JSD are coordinate/bin dependent and NOT normalized KLx in paper. PLRNN is a joint-MAP approximation rather than exact Laplace-EM. Seed 42 reuses saved Phase-3 model in full mode; other seeds use the same fitting budget. Independent reference never used for fitting or selecting the displayed seed."
+}

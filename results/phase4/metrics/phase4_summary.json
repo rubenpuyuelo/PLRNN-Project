@@ -1,0 +1,203 @@
+{
+  "experiment": "Phase 4: independent free-running reconstruction, seed and noise sensitivity",
+  "configuration": {
+    "quick": false,
+    "n_eval": 2400,
+    "burn": 400,
+    "seeds": [
+      42,
+      7,
+      21
+    ],
+    "restarts_per_seed": 3,
+    "noise_ablation_run": true
+  },
+  "systems": {
+    "van_der_pol": {
+      "plrnn": {
+        "n_attempts": 9,
+        "n_stable": 9,
+        "stable_fraction": 1.0,
+        "histogram_js_width_1.0": {
+          "n": 9,
+          "median": 0.4311719187239096,
+          "min": 0.2011961753103925,
+          "max": 0.49963426048810805
+        },
+        "histogram_kl_raw_width_1.0": {
+          "n": 9,
+          "median": 8.07341291950099,
+          "min": 2.02693164015447,
+          "max": 10.657287808266103
+        },
+        "mean_std_ratio": {
+          "n": 9,
+          "median": 0.5103319885226455,
+          "min": 0.002110214337216779,
+          "max": 0.8815352664413618
+        },
+        "near_fixed_point_count": 3,
+        "finite_time_lyapunov": {
+          "n": 9,
+          "median": -0.015523111063863502,
+          "min": -0.27492132312350726,
+          "max": 0.00853917825715344
+        }
+      },
+      "lds_matched": {
+        "n_attempts": 3,
+        "n_stable": 3,
+        "stable_fraction": 1.0,
+        "histogram_js_width_1.0": {
+          "n": 3,
+          "median": 0.49963426048810805,
+          "min": 0.49963426048810805,
+          "max": 0.49963426048810805
+        },
+        "histogram_kl_raw_width_1.0": {
+          "n": 3,
+          "median": 10.657287808266103,
+          "min": 10.657287808266103,
+          "max": 10.657287808266103
+        },
+        "mean_std_ratio": {
+          "n": 3,
+          "median": 0.001202761082599724,
+          "min": 0.0010871864179734978,
+          "max": 0.0012287473556750817
+        },
+        "near_fixed_point_count": 3,
+        "finite_time_lyapunov": {
+          "n": 3,
+          "median": -0.23503840780051585,
+          "min": -0.23503840780051585,
+          "max": -0.23503840780051585
+        }
+      },
+      "reference_self_js_width_1.0": 0.0002262283016337905,
+      "reference_lyapunov": null
+    },
+    "lorenz": {
+      "plrnn": {
+        "n_attempts": 9,
+        "n_stable": 9,
+        "stable_fraction": 1.0,
+        "histogram_js_width_1.0": {
+          "n": 9,
+          "median": 0.4217880455147849,
+          "min": 0.419717283633674,
+          "max": 0.4584591586326425
+        },
+        "histogram_kl_raw_width_1.0": {
+          "n": 9,
+          "median": 8.009523110637753,
+          "min": 7.976987393974322,
+          "max": 8.815874449427417
+        },
+        "mean_std_ratio": {
+          "n": 9,
+          "median": 0.5993489899256604,
+          "min": 0.5679275501411684,
+          "max": 0.6165115697167777
+        },
+        "near_fixed_point_count": 0,
+        "finite_time_lyapunov": {
+          "n": 9,
+          "median": -0.009569750128504197,
+          "min": -0.060160724259360615,
+          "max": 0.027797045015961877
+        }
+      },
+      "lds_matched": {
+        "n_attempts": 3,
+        "n_stable": 3,
+        "stable_fraction": 1.0,
+        "histogram_js_width_1.0": {
+          "n": 3,
+          "median": 0.589092357848573,
+          "min": 0.589092357848573,
+          "max": 0.589092357848573
+        },
+        "histogram_kl_raw_width_1.0": {
+          "n": 3,
+          "median": 10.190171053845889,
+          "min": 10.190171053845889,
+          "max": 10.190171053845889
+        },
+        "mean_std_ratio": {
+          "n": 3,
+          "median": 1.0830041152015013e-07,
+          "min": 4.7680661739149084e-08,
+          "max": 1.3497312988942244e-07
+        },
+        "near_fixed_point_count": 3,
+        "finite_time_lyapunov": {
+          "n": 3,
+          "median": -1.6286905856491454,
+          "min": -1.6286905856491454,
+          "max": -1.6286905856491454
+        }
+      },
+      "reference_self_js_width_1.0": 0.06536903718931841,
+      "reference_lyapunov": 1.2290364882014315
+    }
+  },
+  "noise_ablation": [
+    {
+      "system": "van_der_pol",
+      "noise_std": 0.0,
+      "seed": 21,
+      "status": "ok",
+      "js_width_1.0": 0.16106413256083116,
+      "forecast_mse_h5": 0.026461709308093252
+    },
+    {
+      "system": "van_der_pol",
+      "noise_std": 0.1,
+      "seed": 21,
+      "status": "ok",
+      "js_width_1.0": 0.22566163461975203,
+      "forecast_mse_h5": 0.0643747183843313
+    },
+    {
+      "system": "van_der_pol",
+      "noise_std": 0.3,
+      "seed": 21,
+      "status": "ok",
+      "js_width_1.0": 0.3113714877101009,
+      "forecast_mse_h5": 0.23266790091854145
+    },
+    {
+      "system": "lorenz",
+      "noise_std": 0.0,
+      "seed": 21,
+      "status": "ok",
+      "js_width_1.0": 0.3739763095212969,
+      "forecast_mse_h5": 0.22435493870130233
+    },
+    {
+      "system": "lorenz",
+      "noise_std": 0.1,
+      "seed": 21,
+      "status": "ok",
+      "js_width_1.0": 0.422773904892349,
+      "forecast_mse_h5": 0.24781851480188188
+    },
+    {
+      "system": "lorenz",
+      "noise_std": 0.3,
+      "seed": 21,
+      "status": "ok",
+      "js_width_1.0": 0.6753033367263875,
+      "forecast_mse_h5": 0.33619167433331015
+    }
+  ],
+  "caveats": [
+    "Descriptive finite samples; no inferential statistical significance",
+    "Seed count includes multiple correlated initialization runs per fit",
+    "Raw histogram KL / JSD not paper normalized KL",
+    "Finite-time Lyapunov diagnostics depend on sampling and orbit",
+    "PLRNN is simplified joint MAP rather than original EM",
+    "Equal latent M but not matched number of parameters or inference algorithm"
+  ]
+}
