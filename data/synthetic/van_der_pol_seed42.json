@@ -1,0 +1,13 @@
+{
+  "notes": "Synthetic observed data with Gaussian observation noise; not process noise.",
+  "n_steps": 1000,
+  "n_dimensions": 2,
+  "train_end": 700,
+  "system": "Van der Pol",
+  "mu": 2,
+  "omega": 1,
+  "dt": 0.05,
+  "burn_in": 15.0,
+  "seed": 42,
+  "observation_noise_std": 0.1
+}

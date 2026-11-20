@@ -1,0 +1,48 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.log
+*.tmp
+
+# Trained models and checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Experiment-generated data (uncomment if files get large)
+# data/synthetic/*.npz
+# data/fmri/
+
+# Experiment-generated figures (keep them for now)
+# results/figures/

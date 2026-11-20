@@ -1,0 +1,14 @@
+{
+  "notes": "Synthetic observed data with Gaussian observation noise; not process noise.",
+  "n_steps": 1000,
+  "n_dimensions": 3,
+  "train_end": 700,
+  "system": "Lorenz",
+  "sigma": 10,
+  "rho": 28,
+  "beta": 2.6666666666666665,
+  "dt": 0.02,
+  "burn_in": 5.0,
+  "seed": 42,
+  "observation_noise_std": 0.1
+}
