@@ -1,0 +1,79 @@
+{
+  "van_der_pol": {
+    "system": "van_der_pol",
+    "kind": "synthetic BOLD from ODE benchmark (neural proxy; not fMRI)",
+    "train_end": 700,
+    "test_length": 300,
+    "seed": 42,
+    "hrf_length": 32,
+    "tr_illustrative": 1.0,
+    "oracle_decoder": {
+      "hrf_aware": {
+        "test_clean": 1.099364502698245e-05,
+        "test_noisy": 0.0025815245331483215,
+        "train_noisy": 0.0024754845543746382
+      },
+      "instantaneous": {
+        "test_clean": 0.12107804238293525,
+        "test_noisy": 0.12525415029683012,
+        "train_noisy": 0.12578550050788226
+      }
+    },
+    "noise_floor_test": 0.0025922012181422197,
+    "latent_map": {
+      "hrf_aware": {
+        "train_mse": 0.0019460631071681611,
+        "stable": true,
+        "test_js": 0.12286067330824363,
+        "test_kl_raw": 1.2284837028479867,
+        "test_mse_time": 0.9124070825636077
+      },
+      "instantaneous": {
+        "train_mse": 0.001580046435313261,
+        "stable": true,
+        "test_js": 0.23772972178642732,
+        "test_kl_raw": 3.0791360780923815,
+        "test_mse_time": 1.6511666837650227
+      }
+    }
+  },
+  "lorenz": {
+    "system": "lorenz",
+    "kind": "synthetic BOLD from ODE benchmark (neural proxy; not fMRI)",
+    "train_end": 700,
+    "test_length": 300,
+    "seed": 42,
+    "hrf_length": 32,
+    "tr_illustrative": 1.0,
+    "oracle_decoder": {
+      "hrf_aware": {
+        "test_clean": 8.347522831088734e-05,
+        "test_noisy": 0.0026576386132112634,
+        "train_noisy": 0.0024779096923967362
+      },
+      "instantaneous": {
+        "test_clean": 0.5502670752485431,
+        "test_noisy": 0.5517917957237343,
+        "train_noisy": 0.23344295702735557
+      }
+    },
+    "noise_floor_test": 0.0026089532227080593,
+    "latent_map": {
+      "hrf_aware": {
+        "train_mse": 0.002513009059967919,
+        "stable": false,
+        "test_js": null,
+        "test_kl_raw": null,
+        "test_mse_time": null,
+        "instability_reason": "PLRNN rollout diverged at step 288"
+      },
+      "instantaneous": {
+        "train_mse": 0.001364340004152823,
+        "stable": true,
+        "test_js": 0.5712108659079709,
+        "test_kl_raw": 7.1432240886512846,
+        "test_mse_time": 3.990290385203543
+      }
+    }
+  }
+}

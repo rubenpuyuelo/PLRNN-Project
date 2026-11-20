@@ -1,0 +1,38 @@
+{
+  "system": "van_der_pol",
+  "kind": "synthetic BOLD from ODE benchmark (neural proxy; not fMRI)",
+  "train_end": 700,
+  "test_length": 300,
+  "seed": 42,
+  "hrf_length": 32,
+  "tr_illustrative": 1.0,
+  "oracle_decoder": {
+    "hrf_aware": {
+      "test_clean": 1.099364502698245e-05,
+      "test_noisy": 0.0025815245331483215,
+      "train_noisy": 0.0024754845543746382
+    },
+    "instantaneous": {
+      "test_clean": 0.12107804238293525,
+      "test_noisy": 0.12525415029683012,
+      "train_noisy": 0.12578550050788226
+    }
+  },
+  "noise_floor_test": 0.0025922012181422197,
+  "latent_map": {
+    "hrf_aware": {
+      "train_mse": 0.0019460631071681611,
+      "stable": true,
+      "test_js": 0.12286067330824363,
+      "test_kl_raw": 1.2284837028479867,
+      "test_mse_time": 0.9124070825636077
+    },
+    "instantaneous": {
+      "train_mse": 0.001580046435313261,
+      "stable": true,
+      "test_js": 0.23772972178642732,
+      "test_kl_raw": 3.0791360780923815,
+      "test_mse_time": 1.6511666837650227
+    }
+  }
+}
