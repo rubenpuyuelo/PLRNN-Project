@@ -1,0 +1,57 @@
+{
+  "system": "lorenz",
+  "model": "PLRNN-SSM with alternating joint-MAP latent optimization; approximate recognition at test",
+  "paper_fidelity": "simplified independent MAP implementation, not exact Laplace-EM",
+  "seed": 42,
+  "n_observed": 3,
+  "n_latent_plrnn": 12,
+  "n_latent_lds": 3,
+  "train_end": 700,
+  "n_test": 300,
+  "plrnn_mse": {
+    "1": 0.041631196250603957,
+    "5": 0.2635306921904613,
+    "10": 0.857910653028638,
+    "20": 2.9334221024097027
+  },
+  "lds_mse": {
+    "1": 0.059032720136267994,
+    "5": 0.9315276092681637,
+    "10": 2.948618006999235,
+    "20": 5.536783787810136
+  },
+  "persistence_mse": {
+    "1": 0.05312077208586961,
+    "5": 0.7410922820886963,
+    "10": 2.0920246813139616,
+    "20": 3.2889665685929503
+  },
+  "plrnn_free": {
+    "histogram_kl_raw": 6.807627585436095,
+    "histogram_js": 0.5715715815427689,
+    "n_reference": 300,
+    "n_generated": 300,
+    "histogram_width": 1.0,
+    "histogram_alpha": 0.001,
+    "max_abs_generated": 1.6567348171601766
+  },
+  "lds_free": {
+    "histogram_kl_raw": 7.747492962310313,
+    "histogram_js": 0.640756690374167,
+    "n_reference": 300,
+    "n_generated": 300,
+    "histogram_width": 1.0,
+    "histogram_alpha": 0.001
+  },
+  "unstable_plrnn": false,
+  "observation_mse_train": 0.0022384652785352125,
+  "dynamics_mse_train": 0.00037817825429999183,
+  "process_variance_schedule": [
+    1.0,
+    0.3,
+    0.1,
+    0.03
+  ],
+  "ridge_dyn": 8.0,
+  "note": "Metrics are from one seed and 300 held-out points. The histogram KL is NOT the paper normalized KL. PLRNN uses a trained auxiliary causal encoder + local MAP, while LDS uses Kalman filtering; latent dimensions/parameter counts differ. Out-of-sample MSE and free-run geometry measure different properties."
+}

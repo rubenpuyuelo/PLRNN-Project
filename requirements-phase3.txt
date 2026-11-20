@@ -1,0 +1,4 @@
+# Phase 1/2 dependencies remain necessary.
+# PyTorch is used only for full latent-path MAP optimization; CPU works.
+# Install: python -m pip install -r requirements-phase1.txt -r requirements-phase2.txt -r requirements-phase3.txt
+torch>=2.2
