@@ -1,0 +1,76 @@
+{
+  "system": "lorenz",
+  "train_end": 700,
+  "n_test": 300,
+  "n_observed": 3,
+  "n_latent": 3,
+  "n_em_iterations": 35,
+  "seed": 42,
+  "model": "Linear Gaussian LDS-SSM with diagonal process and observation covariances",
+  "stability_constraint": "spectral radius <= 0.995",
+  "training_log_likelihood_initial": -42.110358484254895,
+  "training_log_likelihood_final": 746.6438575452426,
+  "spectral_radius_F": 0.973644389741683,
+  "lds_mse": {
+    "1": 0.059032720136267994,
+    "5": 0.9315276092681637,
+    "10": 2.948618006999235,
+    "20": 5.536783787810136
+  },
+  "persistence_mse": {
+    "1": 0.05312077208586961,
+    "5": 0.7410922820886963,
+    "10": 2.0920246813139616,
+    "20": 3.2889665685929503
+  },
+  "note": "Forecast scores condition on past test observations through a causal Kalman filter; free-running plots condition ONLY on the final TRAIN filtered latent state. No KL/chaos equivalence claims are made by this baseline.",
+  "F": [
+    [
+      1.0079531998310025,
+      -0.10553151047273832,
+      -0.35185971846687814
+    ],
+    [
+      0.04548036783359585,
+      0.9742622301978191,
+      -0.009724213792439733
+    ],
+    [
+      0.034858527453785884,
+      -0.005441595643883318,
+      0.9122218321736009
+    ]
+  ],
+  "h": [
+    0.003435623379222562,
+    -0.00031118373925506925,
+    8.957353176650027e-06
+  ],
+  "B": [
+    [
+      0.6733657501600244,
+      -0.07007549619024304,
+      0.3523001812441844
+    ],
+    [
+      0.6615843492758816,
+      -0.34322372601995177,
+      -0.7943307730620898
+    ],
+    [
+      -0.33407623260358055,
+      -0.9395929466149852,
+      0.2763183017145534
+    ]
+  ],
+  "Q_diag": [
+    0.014144032404516704,
+    0.046235170936482904,
+    0.020348407187784894
+  ],
+  "R_diag": [
+    0.005590947178438097,
+    0.0029359275196905598,
+    0.0017523517075424674
+  ]
+}
